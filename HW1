@@ -1,1 +1,32 @@
 #"Hello World!"
+# this program is used to  calculates the energy needed to heat water
+#uask ser to enter the weight of water being heated and initial temperature and final temperature
+weight = float(input("enter weight of water(in kg): "))
+initial_temp = float(input("enter initial temperature(in degrees Celsius): "))
+final_temp = float(input("enter final temperature(in degrees Celsius): "))
+energy=weight*(final_temp-initial_temp)*4184
+#display how much energy needed
+print('The energy needed is ',energy,'joules')
+
+
+# This program is used to calculate BMI
+#ask user to enter their weight and height
+height = float(input("enter height (in inches): "))
+weight = float(input("enter weight (in pounds): "))
+#use function to calculate BMI
+BMI=703*weight/(height*height)
+print('\nThe height is',height,'inches','\nThe weight is ',weight,'pounds','\nThe BMI is',BMI)
+if BMI<=25:
+    print('congratulation! Your BMI is less than or equal to 25')
+if BMI>25:
+    print('AMA recommends that BMI be no more than 25')
+    
+    # this program is used to calculate the after-tax price 
+price = float(input("enter the price of the clothing item: $"))
+#calculating the total price
+if price<15:
+    total=round((price*1.017),2)
+if price>=15:
+    total=round((price*1.0765),2) 
+#display the total price
+print('The total price is: $',total)
